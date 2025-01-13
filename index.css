@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Remaining CSS */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background-color: #1d1d21;
+    font-family: 'Poppins', sans-serif !important;
+    padding-bottom: 250px;
+    color: #ededed;
+}
+.header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 1%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-sizing: border-box;
+}
+.logo{
+    font-size: 25px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 200;
+}
+.navbar a {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.navbar a :hover{
+    color: #00abf0;
+}
+.profile-photo {
+    display: block; /* Center the image in the parent container */
+    margin:  30px ;
+    margin-left: 0%; /* Add space below the image */
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Maintain a square shape */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits nicely within the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for aesthetics */
+
+}
+.home{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    padding: 35 25%;
+}
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 45px;
+    font-weight: 700;
+    color: #dfe5e8;
+    margin-bottom: 20px; 
+
+}
+.home-content p {
+    margin-bottom: 20px; /* You can adjust this value as needed */
+    font-size: 22px;
+}
+
+.divider {
+    border: 0;
+    height: 0.5px;
+    background:rgb(186, 176, 176);
+    margin: 1rem 0 0 ;
+    width: 125%;
+    
+}
+/* Styling the button container */
+.buttons {
+    display: flex;
+    gap: 14px; /* Adds space between buttons */
+}
+
+/* General button styles */
+.buttons button {
+    font-size: 17px;
+    padding: 8px 12px; /* Adjusts size for spacing */
+    border-radius: 7px; /* Rounds the corners */
+    display: flex; /* Aligns content within the button */
+    align-items: center; /* Centers text and icon vertically */
+    gap: 8px; /* Adds space between text and icons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Specific styling for the "Hire Me" button */
+.buttons button.hire {
+    color: #fff;
+    background: #388E3C; /* Green background */
+    border: 1px solid #171717; /* Dark border */
+}
+
+.buttons button.hire:hover {
+    background: #4CAF50; /* Lighter green on hover */
+}
+
+/* Specific styling for the "Email Me" button */
+.buttons button.email {
+    color: #ede5e5; /* Light gray text */
+    border: 1px solid #707076; /* Dark border */
+    background: #18181B;/* Dark background */
+}
+
+.buttons button.email:hover {
+    background: #000; /* Black background on hover */
+}
+/* Portfolio Section */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    /* padding: 10px ; */
+    justify-content: center; /* Center the grid */
+   
+    margin: 40px 0;
+}
+
+.card {
+    width: calc(30% - 15px);
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0 ;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+@page {
+	size: auto;
+	margin: 20mm 0 20mm 0;
+}

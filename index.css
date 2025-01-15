@@ -61,6 +61,7 @@ body{
     display: flex;
     align-items: center;
     padding: 35 25%;
+    margin-top: 80px;
 }
 .home-content{
     max-width: 600px;

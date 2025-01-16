@@ -126,6 +126,34 @@ body{
 .buttons button.email:hover {
     background: #000; /* Black background on hover */
 }
+/* Ensure no underline or extra spacing on the anchor */
+.resume-link {
+    text-decoration: none; /* Remove underline from <a> */
+    display: inline-block; /* Keep the button aligned */
+    border: none; /* Remove any border that might show */
+    outline: none; /* Remove outline effect */
+}
+
+/* Prevent unwanted styles from cascading */
+.resume-link button {
+    all: unset; /* Reset inherited styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    background: #388E3C;
+    color: #fff;
+    border: 1px solid #171717;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Keep hover effect intact */
+.resume-link button:hover {
+    background: #4CAF50;
+}
 
 
 @page {

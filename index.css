@@ -184,4 +184,76 @@ footer {
     text-align: center;
     margin: 0;
   }
-  
+  .projects {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #ededed;
+    background-color: #2a2a2f; /* Optional background color */
+}
+
+.projects h2 {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 1rem;
+    color: #ededed;
+}
+
+.project-container {
+    display: grid; /* Use grid layout for precise control */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 1 rem;
+}
+
+.project {
+    background-color: #1d1d21; /* Dark card background */
+    border: 1px solid #707076;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #00abf0; /* Highlight color */
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #388E3C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #4CAF50;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+}

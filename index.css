@@ -185,10 +185,12 @@ footer {
     margin: 0;
   }
   .projects {
+    margin: 0 auto;
+    max-width: 1000px;
     padding: 2rem 1rem;
     text-align: center;
     color: #ededed;
-    background-color: #2a2a2f; /* Optional background color */
+    background-color: #1d1d21; /* Optional background color */
 }
 
 .projects h2 {
@@ -196,7 +198,7 @@ footer {
     margin-bottom: 2rem;
     font-weight: 700;
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 3.5rem;
     color: #ededed;
 }
 
@@ -206,11 +208,14 @@ footer {
     gap: 20px; /* Space between cards */
     justify-content: center;
     margin: 0 auto;
-    max-width: 800px;
-    padding: 0 1 rem;
+    max-width: 900px;
+    padding: 0;
 }
 
 .project {
+    margin: 0;
+    padding: 1rem;
+
     background-color: #1d1d21; /* Dark card background */
     border: 1px solid #707076;
     border-radius: 8px;

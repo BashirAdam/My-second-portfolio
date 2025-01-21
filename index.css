@@ -94,7 +94,7 @@ body{
     height: 0.5px;
     background:rgb(186, 176, 176);
     margin: 1rem 0 0 ;
-    width: 125%;
+    width: 117%;
     
 }
 /* Styling the button container */
@@ -193,14 +193,6 @@ footer {
     background-color: #1d1d21; /* Optional background color */
 }
 
-.projects h2 {
-    font-size: 19px;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 3.5rem;
-    color: #ededed;
-}
 
 .project-container {
     display: grid; /* Use grid layout for precise control */
@@ -235,7 +227,7 @@ footer {
 
 
 .project h3 {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 1rem;
     color: #fcfefe; /* Highlight color */
 }

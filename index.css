@@ -230,6 +230,8 @@ footer {
     font-size: 16px;
     margin-bottom: 1rem;
     color: #fcfefe; /* Highlight color */
+    margin-left: -10px; /* Moves title to the left */
+    text-align: left; 
 }
 
 .project p {

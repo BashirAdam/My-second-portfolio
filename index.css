@@ -59,8 +59,8 @@ body{
     display: block; /* Center the image in the parent container */
     margin:  30px ;
     margin-left: 0%; /* Add space below the image */
-    width: 150px; /* Adjust width as needed */
-    height: 150px; /* Maintain a square shape */
+    width: 160px; /* Adjust width as needed */
+    height: 160px; /* Maintain a square shape */
     border-radius: 50%; /* Make the image circular */
     object-fit: cover; /* Ensure the image fits nicely within the circle */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for aesthetics */

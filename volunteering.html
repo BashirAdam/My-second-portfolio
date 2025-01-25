@@ -19,14 +19,33 @@
             <a href="https://github.com/BashirAdam" target="_blank">Github</a>
         </nav>
     </header>
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+    
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scroll down, hide the navbar
+                header.classList.add('hidden');
+            } else {
+                // Scroll up, show the navbar
+                header.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
 
     <section class="volunteering">
-        <h1>My Volunteering Experience</h1>
-        <ul>
-            <li>Volunteered at Tadamun Organization (2023)</li>
-            <li>Provided assistance during disaster relief operations</li>
-            <li>Worked on community development projects in local areas</li>
-            <!-- Add more volunteering experiences here -->
+        <ul style="margin-top: 150px; padding-left: 150px; padding-right: 150px;">
+            <h2><strong>Volunteering Experience</strong></h2>
+            <p>
+                In 2023, I had the opportunity to volunteer at Tadamun Organization, where I contributed to impactful initiatives aimed at supporting communities in need. My role involved:
+
+            </p>
+            <li>Disaster Relief Assistance: Actively participating in emergency response efforts, providing aid to affected individuals, and ensuring efficient distribution of essential resources.</li>
+            <li>Community Development Projects: Collaborating with local teams to implement sustainable solutions that improved living conditions and promoted social well-being.</li>
+            <li>Through this experience, I developed strong problem-solving, teamwork, and communication skills while making a meaningful difference in the lives of others.</li>
         </ul>
     </section>
 </body>

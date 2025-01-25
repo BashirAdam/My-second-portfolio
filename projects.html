@@ -19,6 +19,23 @@
             <a href="https://github.com/BashirAdam" target="_blank">Github</a>
         </nav>
     </header>
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+    
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scroll down, hide the navbar
+                header.classList.add('hidden');
+            } else {
+                // Scroll up, show the navbar
+                header.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+    
    
     <section class="projects" style="padding-top: 200px;">
         

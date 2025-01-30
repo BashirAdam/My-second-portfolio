@@ -40,7 +40,7 @@ body{
     transform: translateY(-100%); /* Move navbar offscreen */
 }
 .logo{
-    font-size: 25px;
+    font-size: 23px;
     color:#ededed;
     text-decoration: none;
     font-weight: 200;
